@@ -506,7 +506,7 @@ body {
     .services__content {
       width: 100%; } }
 
-.section:nth-child(7) {
+.section.features--wrapper {
   background-color: #56ccf2;
   overflow: hidden;
   -webkit-transform: translate(0, -17%);
