@@ -11,7 +11,7 @@ body {
   background-color: #fafafa; }
 
 .container {
-  max-width: 1124px;
+  max-width: 1146px;
   padding: 0 20px;
   margin: auto; }
 
@@ -59,7 +59,11 @@ body {
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 980px; }
     .header__top .top__title {
       font-size: 32px;
       font-weight: 700; }
@@ -82,8 +86,8 @@ body {
       text-decoration: none;
       font-weight: 700;
       color: #fff; }
-    .header__top .list__link:hover {
-      border-bottom: 2px solid #fcc304; }
+      .header__top .list__link:hover {
+        border-bottom: 2px solid #fcc304; }
     .header__top .navbar__list li:last-child {
       margin-left: 135px; }
   .header .header__title {
@@ -105,8 +109,8 @@ body {
       font-weight: 700;
       cursor: pointer;
       outline: none; }
-    .header .header__title .title__button:hover {
-      background-color: #dedede; }
+      .header .header__title .title__button:hover {
+        background-color: #dedede; }
   .header--toggle {
     display: none;
     background-image: url("../images/bars.svg");
@@ -126,10 +130,12 @@ body {
     right: 0;
     -webkit-transform: skew(0deg);
             transform: skew(0deg); }
-  .header__top .navbar__list {
-    width: 600px; }
-  .header__top .navbar__list li:last-child {
-    margin-left: 0; } }
+  .header__top {
+    width: 100%; }
+    .header__top .navbar__list {
+      width: 600px; }
+    .header__top .navbar__list li:last-child {
+      margin-left: 0; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -358,7 +364,8 @@ body {
             justify-content: space-between;
     width: 100%;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding-bottom: 160px; }
     .about__cards .card {
       width: 265px; }
       .about__cards .card__title {
@@ -513,7 +520,7 @@ body {
           transform: translate(0, -17%); }
 
 .features {
-  padding: 160px 20px;
+  padding: 100px 20px;
   position: relative; }
   .features--backgroung-img {
     position: absolute;
@@ -555,7 +562,8 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
     position: relative;
-    padding-right: 40px; }
+    padding-right: 40px;
+    margin-bottom: 60px; }
   .features__text {
     font-size: 16px;
     line-height: 150%;
