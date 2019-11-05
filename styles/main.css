@@ -789,7 +789,12 @@ body {
     height: 70%;
     bottom: 0; }
   .results .ellipses--right {
-    right: 0; }
+    right: 0;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out; }
+  .results .ellipses--left {
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out; }
   .results .ellipse {
     position: absolute;
     border-radius: 50px;
@@ -870,6 +875,18 @@ body {
           transform: rotate(385deg);
   -webkit-transition: 0.6s ease-out;
   transition: 0.6s ease-out; }
+
+.results:hover .ellipses--right {
+  -webkit-transform: translate(-200%, 0) scale(-1, 1);
+          transform: translate(-200%, 0) scale(-1, 1);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out; }
+
+.results:hover .ellipses--left {
+  -webkit-transform: translate(200%, 0) scale(-1, 1);
+          transform: translate(200%, 0) scale(-1, 1);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out; }
 
 @media screen and (max-width: 999px) {
   .results {
