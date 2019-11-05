@@ -795,7 +795,9 @@ body {
     border-radius: 50px;
     border: 3px solid transparent;
     -webkit-transform: rotate(25deg);
-            transform: rotate(25deg); }
+            transform: rotate(25deg);
+    -webkit-transition: 0.6s ease-out;
+    transition: 0.6s ease-out; }
   .results .ellipse--1,
   .results .ellipse--7,
   .results .ellipse--8 {
@@ -862,6 +864,12 @@ body {
     right: 0%;
     top: 40%;
     border-color: #fce493; }
+
+.results:hover .ellipse {
+  -webkit-transform: rotate(385deg);
+          transform: rotate(385deg);
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out; }
 
 @media screen and (max-width: 999px) {
   .results {
