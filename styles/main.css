@@ -952,6 +952,11 @@ body {
         font-size: 14px;
         line-height: 150%;
         color: #152032; }
+      .contact__form .form__input:focus {
+        outline: none;
+        border: 2px solid #2f80ed;
+        border-radius: 20px;
+        padding-left: 10px; }
     .contact__form .form__button {
       padding: 15px 85px;
       background-color: #2f80ed;
@@ -1072,6 +1077,8 @@ body {
     line-height: 150%;
     text-decoration: none;
     color: #253757; }
+    .footer .list__link:hover {
+      border-bottom: 2px solid #fcc304; }
 
 @media screen and (max-width: 999px) {
   .footer .navbar__list {
