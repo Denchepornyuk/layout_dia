@@ -46,7 +46,7 @@ body {
     top: 0;
     right: 17%;
     width: 100%;
-    height: 112%;
+    height: 118%;
     -webkit-transform: skew(-25deg);
             transform: skew(-25deg);
     background: #56ccf2;
@@ -89,7 +89,8 @@ body {
       .header__top .list__link:hover {
         border-bottom: 2px solid #fcc304; }
     .header__top .navbar__list li:last-child {
-      margin-left: 135px; }
+      margin-left: 135px;
+      border-bottom: 2px solid #fcc304; }
   .header .header__title {
     width: 750px;
     margin: 85px;
@@ -232,8 +233,8 @@ body {
     .slider__photo .arrow {
       cursor: pointer; }
     .slider__photo .slide {
-      height: 500px;
-      width: 1000px; }
+      height: 640px;
+      width: 1146px; }
     .slider__photo .photo__text {
       position: absolute;
       bottom: 40px;
@@ -287,12 +288,12 @@ body {
       color: #253757; }
 
 @media screen and (max-width: 1100px) {
-  .slider .slider__photo {
+  .slider__photo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .slider .slider__photo .slider__network {
+    .slider__photo .slider__network {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -300,9 +301,12 @@ body {
       width: 300px;
       margin-top: 10px;
       height: auto; }
-    .slider .slider__photo .network {
+    .slider__photo .network {
       -webkit-transform: rotate(0);
-              transform: rotate(0); } }
+              transform: rotate(0); }
+    .slider__photo .slide {
+      width: 1000px;
+      height: 600px; } }
 
 @media screen and (max-width: 1250px) {
   .slider__photo .slider__arrows {
@@ -708,13 +712,13 @@ body {
     font-weight: 800;
     font-size: 12.6px;
     line-height: 150%; }
-  .reviews .review__card:nth-child(1) .review__photo::before {
+  .reviews .review__card:first-child .review__photo::before {
     top: -10px;
     height: 150%; }
-  .reviews .review__card:nth-child(1)::after,
-  .reviews .review__card:nth-child(1) .review__text::after {
+  .reviews .review__card:first-child::after,
+  .reviews .review__card:first-child .review__text::after {
     background-color: #79d7f5; }
-  .reviews .review__card:nth-child(1) .review__position {
+  .reviews .review__card:first-child .review__position {
     color: #79d7f5; }
   .reviews .review__card:nth-child(2) .review__photo::before {
     left: -15px;
