@@ -276,7 +276,13 @@ body {
       line-height: 150%;
       text-transform: uppercase;
       text-decoration: none;
-      color: #253757; }
+      color: #253757;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .slider__photo .network:hover {
+        color: #56ccf2;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
   .slider__description {
     margin: auto;
     margin-top: 160px;
@@ -287,7 +293,7 @@ body {
       line-height: 150%;
       color: #253757; }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1330px) {
   .slider__photo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -324,7 +330,7 @@ body {
     margin-bottom: 0; }
     .slider .slider__description {
       width: 100%;
-      margin-top: 50px; }
+      margin-top: 100px; }
     .slider__photo .photo__text {
       font-size: 12px;
       bottom: 10px;
@@ -373,7 +379,8 @@ body {
         flex-wrap: wrap;
     padding-bottom: 160px; }
     .about__cards .card {
-      width: 265px; }
+      width: 265px;
+      text-align: center; }
       .about__cards .card__title {
         margin-top: 60px;
         font-weight: 900;
@@ -392,15 +399,22 @@ body {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly; }
     .about__cards .card {
-      text-align: center;
       margin-right: 10px; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .about {
-    margin-bottom: 20px; }
-    .about__title {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0); } }
+    margin-top: 150px; }
+    .about__cards .card {
+      margin-bottom: 50px; }
+      .about__cards .card__title {
+        margin-top: 30px; }
+    .about__cards .card:last-child {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 480px) {
+  .about__title {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
 
 .services {
   display: -webkit-box;
@@ -592,6 +606,10 @@ body {
     background-image: url("../images/features/icon_2.svg"); }
   .features .features__description:nth-of-type(3) .features__text::before {
     background-image: url("../images/features/icon_3.svg"); }
+
+@media screen and (min-width: 1400px) {
+  .features--backgroung-img {
+    top: -154px; } }
 
 @media screen and (max-width: 999px) {
   .features--backgroung-img {
